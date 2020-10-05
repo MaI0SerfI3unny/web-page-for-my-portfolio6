@@ -1,0 +1,167 @@
+*{
+  margin:0;
+  padding: 0;
+}
+
+/*===========================BOOTSTRAP OPTION=================================*/
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container, .container-sm, .container-md {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container, .container-sm, .container-md, .container-lg {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1140px;
+  }
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+.float-left {
+  float: left !important;
+}
+
+.float-right {
+  float: right !important;
+}
+/*============================HEADER================================================*/
+
+header{
+  width: 100%;
+  height: 750px;
+    background-image: url("../img/banner.jpg");
+  border-top: solid 2px #ff6868;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.nav-menu{
+  width: 100%;
+  height: 100%;
+}
+
+ul{
+  padding: 30px;
+  list-style-type: none;
+  display: inline-flex;
+}
+
+li{
+  padding-right: 20px;
+}
+
+.logo{
+  color: #ff6868;
+  padding: 21px;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+a{
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+.banner{
+padding: 25px;
+ margin-top: 10rem;
+}
+
+header h1{
+  margin-bottom: 1rem;
+  font-size: 60px;
+  color: #ff6868;
+}
+
+header p{
+  width: 550px;
+  color: #888d93;
+  font-family: 'Gentium Book Basic', serif;
+  margin-bottom: 1rem;
+}
+
+header form{
+  width: 400px;
+  height: 100px;
+}
+
+header label{
+  border: solid 3px #f16666;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+header label:hover{
+  background-color: #ff6868;
+}
+
+.f{
+  padding-left: 5px;
+  padding-right: 5px;
+}
