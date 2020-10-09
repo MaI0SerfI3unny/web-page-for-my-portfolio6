@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+@media (max-width:841px) {
+  body{
+    min-width: 841px;
+  }
+}
+
 button,
 button:active,
 button:focus,
@@ -46,9 +52,11 @@ input:focus {
 }
 
 .col-md-3p {
-  -ms-flex: 0 0 22%;
-  flex: 0 0 21%;
-  max-width:23%;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width:25%;
+  margin-top: -4px;
+  padding: 0;
 }
 
 .col-md-4 {
@@ -283,8 +291,9 @@ input:focus {
 }
 
 .img-fluid {
-width: 100%;
-height: 100%;
+  max-width: 100%;
+width: 490px;
+height: 325px;
 }
 
 /*============================HEADER================================================*/
@@ -304,17 +313,52 @@ header{
   height: 600px;
     background-size: 100% 100%;
   border-top: solid 2px #ff6868;
-  background-size: 100% 100%;
+
   background-repeat: no-repeat;
   position:-webkit-sticky; position:sticky; top:-63%;
   z-index: 2;
 
 }
 
+@media (max-height: 688px) {
+  header{
+    position:sticky; top:-67%;
+  }
+}
+@media (max-height: 677px) {
+  header{
+    position:sticky; top:-69%;
+  }
+}
+
+@media (max-height: 657px) {
+  header{
+    position:sticky; top:-73%;
+  }
+}
+
+@media (max-height: 621px) {
+  header{
+    position:sticky; top:-75%;
+  }
+}
+
+@media (max-width:768px) {
+  header{
+    position:relative;
+  }
+}
+
+@media (max-height:360px) {
+  header{
+    position:sticky; top:-113%;
+
+  }
+}
+
 .nav-menu{
   z-index: 1;
   position:-webkit-sticky; position:sticky; top:0;
-
   width: 100%;
   height: 100%;
 }
@@ -374,7 +418,7 @@ header input{
   background-color: #4a515b;
   color: #9c9d9d;
   padding-left: 20px;
-  width: 370px;
+  width: 70%;
   height: 50px;
 }
 
@@ -428,6 +472,12 @@ main{
   z-index: -1;
 }
 
+@media (max-width:1200px) {
+  .shape{
+    visibility: hidden;
+  }
+}
+
 .service h4{
   margin-top: 1rem;
   font-size: 25px;
@@ -444,21 +494,34 @@ main{
 .team{
   margin-top: 10rem;
   width: 100%;
-  height:500px;
-
+  display:inline-flex;
+  overflow: scroll;
+  background-color: #484c54;
 }
 
 .slider{
   background-color: #3d454f;
-  width: 73%;
-  padding: 50px;
-  height: 100%;
 }
 
-.slider img{
-  height: 100%;
-  width: auto;
+.bar1{
+  color: white;
+  font-size: 40px;
 }
+.slides{
+  width: 132.7%;
+}
+.slide {
+  float: left;
+  transition: 0.3s;
+margin-right: 10rem;
+  margin-left: 3rem;
+}
+
+.banner1{
+padding: 30px;
+height: 365px;
+}
+
 
 .slider h2{
   font-family: 'Gentium Book Basic', serif;
@@ -472,7 +535,7 @@ main{
 
 .proff{
   color: white;
-  padding-left: 38%;
+  padding-left: 42%;
   font-size: 28px;
   font-weight: lighter;
   margin-top: 2rem;
@@ -482,8 +545,8 @@ main{
 .srv-txt{
   color: white;
   font-size: 14px;
-  margin-left: 1rem;
-  width: 500px;
+  margin-left: 3rem;
+  width: 700px;
 }
 
 .slider label{
@@ -527,8 +590,8 @@ main{
 
 .bar{
   float: ;
-  margin-left: 38%;
-  margin-top: 10.2rem;
+  margin-left: 45%;
+  margin-top: 5rem;
   border-radius: 15px;
   margin-bottom: 5px;
   font-size: 14px;
@@ -560,8 +623,8 @@ main{
 }
 /*--------------------------------APP DEVELOPMENT------------------------------------------------*/
 .app{
+  margin-top: 10rem;
   width: 100%;
-  height: 400px;
   background-image: url("../img/iphone.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -570,9 +633,18 @@ main{
 .app-content{
   margin-bottom: 5rem;
   padding-top:10%;
+  padding-bottom:10%;
   padding-left: 5%;
   width: 550px;
 }
+
+@media (max-width:792px) {
+  .app-content{
+    padding-left: 0;
+    width: 40%;
+  }
+}
+
 
 .app-content h2{
   margin-bottom: 1rem;
@@ -593,12 +665,42 @@ main{
   height: 645px;
 }
 
+.portfolio .nav{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.portfolio label{
+  margin-left: 1rem;
+}
+
+.portfolio button{
+  padding: 8px;
+  color: #ff6868;
+  color: #ff6868;
+  border: 1px solid #ff6868;
+  border-radius: 5px;
+  background-color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.portfolio button:hover{
+  color: white;
+}
+
 /*----------------------------------------COMPANY-------------------------------------*/
 
 .products{
+  padding-top: 10rem;
   width: 100%;
-  height: 80px;
   background-color: #38404a;
+}
+
+@media (max-width:848px) {
+  .products{
+    visibility: hidden;
+  }
 }
 
 .products svg{
@@ -614,7 +716,6 @@ main{
 /*---------------------------------------BLOG----------------------------------------------*/
 .blog{
   width: 100%;
-  height: 770px;
   margin-bottom: 15rem;
 }
 
@@ -719,11 +820,12 @@ button svg{
 
 /*-------------------------------PRICING-------------------------------------------*/
 
-h2{
+.pricing h2{
   margin-bottom: 3rem;
   font-size: 40px;
   font-weight: lighter;
 }
+
 
 .pricing .col-md-1{
   border: solid 1px #d1e5f8;
@@ -750,6 +852,14 @@ h2{
   font-size: 24px;
   font-weight: bold;
 }
+
+@media (max-width:1200px) {
+  .top h3{
+    padding: 5px;
+  }
+}
+
+
 .top .p{
   font-size: 16px;
   padding-left: 2rem;
@@ -804,15 +914,22 @@ button:hover{
   font-size: 17px;
 }
 
+@media (max-width:1201px) {
+  .link{
+    visibility: hidden;
+  }
+}
 
 .twitt label{
   display: block;
-  margin-top: 3rem;
+  margin-top: 5rem;
+  left: 48.5%;
   border: solid 3px #f16666;
   padding: 15px;
   border-radius: 30px;
-  margin-right: 20px;
 }
+
+
 
 .twitt label:hover{
   background-color: #ff6868;
@@ -821,7 +938,6 @@ button:hover{
 
 .contact{
   width: 100%;
-  height: 400px;
   padding-bottom: 8rem;
 }
 
@@ -834,6 +950,13 @@ button:hover{
   border:none;
   color: #b3b3b3;
   font-weight: bold;
+}
+
+@media (max-width:1200px) {
+  .input-head{
+    width: 91%;
+    margin-top: 1rem;
+  }
 }
 
 .input-main{
