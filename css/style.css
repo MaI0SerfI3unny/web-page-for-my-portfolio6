@@ -18,6 +18,10 @@ input:focus {
     outline: none;
 }
 
+button{
+  min-width: 100px;
+}
+
 /*===========================BOOTSTRAP OPTION=================================*/
 .container {
   width: 100%;
@@ -513,12 +517,11 @@ main{
 .slide {
   float: left;
   transition: 0.3s;
-margin-right: 10rem;
   margin-left: 3rem;
 }
 
 .banner1{
-padding: 30px;
+
 height: 365px;
 }
 
@@ -921,9 +924,10 @@ button:hover{
 }
 
 .twitt label{
+  position: absolute;
   display: block;
-  margin-top: 5rem;
-  left: 48.5%;
+  margin-top: 4rem;
+
   border: solid 3px #f16666;
   padding: 15px;
   border-radius: 30px;
